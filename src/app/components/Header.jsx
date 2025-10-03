@@ -35,12 +35,13 @@ export default function Header() {
     : "opacity-0 -translate-y-2 scale-95";
 
   return (
-    <header
-      role="banner"
-      className={`fixed top-0 left-0 right-0 z-50 backdrop-blur-md transition-all duration-300
-        ${scrolled ? "bg-black/50 shadow-md border-b border-neutral-800" : "bg-transparent"}
-      `}
-    >
+<header
+  role="banner"
+  className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300
+    bg-transparent backdrop-blur-xl md:bg-transparent md:backdrop-blur-none
+  `}
+>
+
       {/* Full-bleed background; inner content gets a wider max width */}
       <div className="w-full px-4 sm:px-6 lg:px-8">
         <div className="mx-auto w-full max-w-screen-2xl">
